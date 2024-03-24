@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:active,
+:focus {
+  outline: none;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+aside,
+footer,
+header,
+nav {
+  display: block;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  max-width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  width: 1310px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.nav_menu_left_side {
+  display: flex;
+  justify-content: space-between;
+  width: 449px;
+}
+.nav_menu_left_side a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1);
+}
+.nav_menu_right_side {
+  width: 219px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_menu_right_side p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  align-items: center;
+}
+.menuBascket {
+  margin-top: -5px;
+}
+.main {
+  width: 1615px;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  height: 960px;
+}
+
+.test {
+  width: 820px;
+  height: 100%;
+  background-color: red;
+}
+.main_img {
+  border: 1px solid black;
+  max-width: 950px;
+  max-height: 950px;
+}
+.main_img img {
+  width: 100%;
+}
+.main_text {
+  width: 500px;
+  z-index: 11;
+}
+.main_text_header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 170px;
+  font-weight: 400;
+  line-height: 136px;
+  line-height: 136px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1);
+  z-index: 10;
+  margin-top: 126px;
+  width: 1310px;
+}
+.main_text_subtext {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1);
+  margin-top: 90px;
+  width: 520px;
+}
+.main_text_btn_order {
+  width: 167px;
+  height: 50px;
+  background: rgba(19, 19, 19, 1);
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 40px;
+}
+.main_text_btn_order:hover {
+  cursor: pointer;
+}
+.modalCloseBtn {
+  float: right;
+}
+.modalShadow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.74);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navMenuPhone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 1);
+  z-index: 20;
+  padding: 20px;
+}
+.navMenuPhone_header {
+  display: flex;
+  justify-content: space-between;
+}
+.navMenuPhone_navBar {
+  margin-top: 20px;
+}
+.navMenuPhone_btnOpenModal {
+  width: 167px;
+  height: 50px;
+  background: rgba(19, 19, 19, 1);
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 45px;
+}
+.navMenuPhone_navBar p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1);
+  margin-top: 20px;
+}
+.modalContent {
+  width: 593px;
+  height: 454px;
+  border-radius: 20px;
+  background: rgba(255, 252, 245, 1);
+  z-index: 31;
+  padding: 20px;
+}
+.modalContent_header {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.modalContent_subtext {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: rgba(169, 169, 169, 1);
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.modalContent_MailText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: rgba(19, 19, 19, 1);
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.modalContent_inputMail {
+  width: 473px;
+  height: 52px;
+  border-radius: 5px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  opacity: 0px;
+  margin-top: 11px;
+  margin-left: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: rgba(201, 200, 200, 1);
+  padding-left: 20px;
+}
+.modalContent_checkBox {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.modalContent_checkBox input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(188, 188, 188, 1);
+}
+.modalContent_checkBox p {
+  margin-left: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: rgba(179, 179, 179, 1);
+}
+.btnSave {
+  width: 473px;
+  height: 52px;
+  border-radius: 100px;
+  background: rgba(31, 31, 31, 1);
+  margin-left: 40px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.modelClose {
+  display: none;
+}
+.menuBtn {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 1626px) {
+  .main {
+    float: left;
+    max-width: 1000px;
+    flex-direction: column;
+  }
+  .main_text {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1311px) {
+  .main_text_header {
+    max-width: 900px;
+  }
+}
+@media (max-width: 1064px) {
+  .main {
+    width: 360px;
+    float: none;
+    margin: 0 auto;
+  }
+  .main_img {
+    margin-top: 34px;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .nav_menu_left_side {
+    display: none;
+  }
+  .main_text_header {
+    max-width: 326px;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: center;
+  }
+  .main_text_subtext {
+    margin-top: 40px;
+    width: 345px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+  }
+  .main_text_btn_order {
+    margin-left: 80px;
+  }
+  .main_text {
+    width: 100%;
+  }
+  .modalContent {
+    border-radius: 0;
+    width: 360px;
+  }
+  .modalContent_subtext {
+    margin-left: 0;
+    width: 299px;
+    text-align: center;
+  }
+  .modalContent_MailText {
+    margin-left: 0;
+  }
+  .modalContent_inputMail {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .modalContent_checkBox {
+    margin-left: 0;
+  }
+  .btnSave {
+    width: 320px;
+    margin-left: 0;
+  }
+  .nav_menu_right_side p {
+    display: none;
+  }
+  .nav_menu_right_side {
+    width: 60px;
+  }
+  .header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .menuBtn {
+    display: block;
+  }
+}
